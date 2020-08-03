@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Black Chat</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!--        RESPONSIVE PART-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--    SCRIPTS FOR ALL-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--OWN MODIFICATION-->
+    <link rel="stylesheet" href="./css/blackchat.min.css">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1 id="messageLabel">BLACK - CHAT</h1>
+
+
+    <div class="wrap" id="hideme">
+        <div class="container">
+            <div class="row">
+                <div class="form" id="register">
+                    <label for="goodname">
+                        <input type="text" required id="goodname" />
+                        <div class="label-text">Your Good Name</div>
+                    </label>
+                    <label for="master">
+                        <input type="text" required id="master" pattern="[a-zA-Z0-9]+" />
+                        <div class="label-text">Master Key</div>
+                    </label>
+                    <button onclick="regis()">Get In</button>
+                    <br><br>
+                    <p style="color: #5d11fa; cursor:pointer" onclick="getlogin()">Already Registered ? <strong>click here to log in. </strong></p>
+                </div>
+
+                <!--      LOGING IN        -->
+                <div class="form" id="in" style="display: none;">
+                    <label for="master2">
+                        <input type="text" required id="master2" pattern="[a-zA-Z0-9]+" />
+                        <div class="label-text">Master Key</div>
+                    </label>
+                    <button onclick="login()">Get the App</button>
+                    <br><br>
+                    <p style="color: #5d11fa; cursor:pointer" onclick="getregis()">Not Registered ? <strong>Click here to Register first.</strong></p>
+                </div>
+
+                <div class="info">
+                    <p><strong class="impo">* Your Good name - </strong> this will be your display name.</p>
+                    <p><strong class="impo"># Master Key - </strong> this <strong style="color:#c6c656">alphanumeric</strong> text will act as a KEY to enter into main chat app. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCdPkdDpqEio3kPTDsewCLjitfn0bnd378",
+            authDomain: "chatiyapp.firebaseapp.com",
+            databaseURL: "https://chatiyapp.firebaseio.com",
+            projectId: "chatiyapp",
+            storageBucket: "chatiyapp.appspot.com",
+            messagingSenderId: "411562452094",
+            appId: "1:411562452094:web:ada1cef477d4bd0f22e42f",
+            measurementId: "G-B6G5QNGMNT"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+
+    </script>
+    <script src="./js/blackchat.js"></script>
+</body>
+
+</html>

@@ -85,7 +85,7 @@ function regis() {
         userwa.updateProfile({
             displayName: x
         })
-        window.location.replace("https://google.co.in");
+        window.location.replace("https://nehal-backspace.github.io/Black_Chat/download.html");
     }).catch(function (error) {
         // Handle Errors here.
         var errorCode = error.code;
@@ -101,7 +101,7 @@ function login() {
     var z = "123456";
 
     firebase.auth().signInWithEmailAndPassword(y, z).then((res) => {
-        window.location.replace("https://google.co.in");
+        window.location.replace("https://nehal-backspace.github.io/Black_Chat/download.html");
     }).catch(function (error) {
         // Handle Errors here.
         var errorCode = error.code;

@@ -3,14 +3,6 @@ function getlogin() {
     document.getElementById("in").style.display = "block";
 }
 
-function logmeout() {
-    firebase.auth().signOut().then(function () {
-        console.log("Logged out");
-    }).catch(function (error) {
-        // An error happened.
-    });
-}
-
 
 function getregis() {
     document.getElementById("in").style.display = "none";
@@ -71,7 +63,23 @@ timer1 = setInterval("textFunc()", 150); // Every 150 milliseconds
 
 
 
-//Fire....
+// Fire...
+
+// Your web app's Firebase configuration
+var firebaseConfig = {
+    apiKey: "AIzaSyCdPkdDpqEio3kPTDsewCLjitfn0bnd378",
+    authDomain: "chatiyapp.firebaseapp.com",
+    databaseURL: "https://chatiyapp.firebaseio.com",
+    projectId: "chatiyapp",
+    storageBucket: "chatiyapp.appspot.com",
+    messagingSenderId: "411562452094",
+    appId: "1:411562452094:web:ada1cef477d4bd0f22e42f",
+    measurementId: "G-B6G5QNGMNT"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+
 
 function regis() {
 
@@ -79,18 +87,22 @@ function regis() {
     var y = document.getElementById("master").value + "@chatiyapp.com";
     var z = "123456";
 
-
+    document.getElementById("load").style.display = "block";
     firebase.auth().createUserWithEmailAndPassword(y, z).then((res) => {
         const userwa = firebase.auth().currentUser;
         userwa.updateProfile({
             displayName: x
         })
+        localStorage.setItem("item", userwa);
+        document.getElementById("load").style.display = "none";
         window.location.replace("http://blackchat.ml/download.html");
+
     }).catch(function (error) {
         // Handle Errors here.
         var errorCode = error.code;
         var errorMessage = error.message;
         // ...
+        document.getElementById("load").style.display = "none";
         console.log("Wait !! ERROR : " + errorMessage);
         window.alert("Seems like You have Already Registered...Please Login and get the App :)")
     });
@@ -99,14 +111,21 @@ function regis() {
 function login() {
     var y = document.getElementById("master2").value + "@chatiyapp.com";
     var z = "123456";
-
+    document.getElementById("load").style.display = "block";
     firebase.auth().signInWithEmailAndPassword(y, z).then((res) => {
+        const userwa = firebase.auth().currentUser.email;
+        localStorage.setItem("item", userwa);
+        document.getElementById("load").style.display = "none";
         window.location.replace("http://blackchat.ml/download.html");
+
+        // window.location.replace("file:///D:/BLACK_CHAT/Github-Black_Chat/download.html");
+
     }).catch(function (error) {
         // Handle Errors here.
         var errorCode = error.code;
         var errorMessage = error.message;
         // ...
+        document.getElementById("load").style.display = "none";
         console.log("Wait !! ERROR : " + errorMessage);
         window.alert("Seems like You have not Registered...Please Register first Or try again :)");
     });

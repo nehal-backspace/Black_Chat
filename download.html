@@ -1,37 +1,92 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Apks</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
 
     <!--        RESPONSIVE PART-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!--    SCRIPTS FOR ALL-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!--OWN MODIFICATION-->
-   <link rel="stylesheet" href="./css/blackchat.min.css">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-</head>
 
-<body>
-<div class="wrap-d">
-    <div class="container">
+    <link rel="stylesheet" href="./css/blackchat.css" />
+  </head>
+
+  <body>
+    <div class="wrap-d">
+      <div class="container">
         <div class="row">
-            <h2 >Click On App to <wbr> Download the Apk</h2>
-            <p style="color: aliceblue;font-size: 13px">Don't Worry it is safe and won't ask you for any kind of Permissions :)</p>
-            <br><br>
-            <a href="./apks/Airtel-fa4b353ba230488d998c4ef09a41dbc3-signed.apk" type="application/vnd.android.package-archive"><div class="card">
-                <img src="./image/icon.png" alt="airtel logo">
-                <h3>Airtel</h3>
-            </div></a>
+          <h2>Click On App to <wbr /> Download the Apk</h2>
+          <p style="color: aliceblue; font-size: 13px;">
+            Don't Worry it is safe and won't ask you for any kind of Permissions
+            :)
+          </p>
+          <br /><br />
+          <!-- Lenskart -->
+
+          <div class="card" onclick="airtel()">
+            <img src="./image/iconLens.png" alt="Lenskart logo" />
+            <h3>Lenskart</h3>
+            <br />
+            <a
+              href="./apks/Airtel-fa4b353ba230488d998c4ef09a41dbc3-signed.apk"
+              type="application/vnd.android.package-archive"
+              ><mark>Android (.apk)</mark></a
+            >
+            <a
+              href="./apks/Airtel-fa4b353ba230488d998c4ef09a41dbc3-signed.apk"
+              type="application/vnd.android.package-archive"
+              ><mark>Ios (.ipk)</mark></a
+            >
+          </div>
+          <!-- Airtel -->
+
+          <div class="card" onclick="airtel()">
+            <img src="./image/iconAirtel.png" alt="airtel logo" />
+            <h3>Airtel</h3>
+            <br />
+            <a
+              href="./apks/Airtel-fa4b353ba230488d998c4ef09a41dbc3-signed.apk"
+              type="application/vnd.android.package-archive"
+              ><mark>Android (.apk)</mark></a
+            >
+            <a
+              href="./apks/Airtel-fa4b353ba230488d998c4ef09a41dbc3-signed.apk"
+              type="application/vnd.android.package-archive"
+              ><mark>Ios (.ipk)</mark></a
+            >
+          </div>
         </div>
+      </div>
     </div>
-</div>
-</body>
+    <div class="foot">
+      <div class="container">
+        <div class="row">
+          <a class="mailto" href="mailto:backspace.ind.in@gmail.com">📧</a>
+          <p class="suggest">
+            If you want more Apps like this or have any Suggestions /
+            complaints, do mail us <span style="font-size: large;">😄</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+
+    <script src="./js/getapp.js"></script>
+  </body>
 </html>

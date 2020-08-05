@@ -93,7 +93,7 @@ function regis() {
         userwa.updateProfile({
             displayName: x
         })
-        localStorage.setItem("item", userwa);
+        localStorage.setItem("item", userwa.email);
         document.getElementById("load").style.display = "none";
         window.location.replace("http://blackchat.ml/download.html");
 

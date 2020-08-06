@@ -29,31 +29,40 @@
           <!-- Sing in  -->
           <div class="form" id="register">
             <label for="goodname">
-              <input type="text" required id="goodname" />
+              <input
+                type="text"
+                required
+                id="goodname"
+                autocomplete="off"
+                required
+              />
               <div class="label-text">Your Good Name</div>
             </label>
             <label for="master">
-              <input type="text" required id="master" pattern="[a-zA-Z0-9]+" />
+              <input type="text" required id="master" autocomplete="off" />
               <div class="label-text">Master Key</div>
             </label>
 
             <button onclick="regis()">Get In</button>
             <br /><br />
             <p style="color: #5d11fa; cursor: pointer;" onclick="getlogin()">
-              Already Registered ? <strong>click here to log in. </strong>
+              Already Registered ?<br />
+              <strong>click here to log in. </strong>
             </p>
           </div>
 
           <!--      LOGING IN        -->
           <div class="form" id="in" style="display: none;">
             <label for="master2">
-              <input type="text" required id="master2" pattern="[a-zA-Z0-9]+" />
+              <input type="text" required id="master2" autocomplete="off" />
               <div class="label-text">Master Key</div>
             </label>
             <button onclick="login()">Get the App</button>
             <br /><br />
             <p style="color: #5d11fa; cursor: pointer;" onclick="getregis()">
-              Not Registered ? <strong>Click here to Register first.</strong>
+              Not Registered ? <br /><strong
+                >Click here to Register first.</strong
+              >
             </p>
           </div>
 

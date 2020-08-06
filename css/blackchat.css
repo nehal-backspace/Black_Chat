@@ -145,6 +145,10 @@ button:focus {
 
 /*////////////////////////////////////////////////////////////*/
 
+input:invalid + b + [type="submit"] {
+  display: none; /* hide input submit untill pattern matches */
+}
+
 .info {
   margin-top: 10%;
   color: #898888;
@@ -162,6 +166,7 @@ button:focus {
   margin: auto;
   margin-bottom: 5%;
 }
+.how:hover,
 .card:hover {
   border-bottom: none;
   background: #454444;

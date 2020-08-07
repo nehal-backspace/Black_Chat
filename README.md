@@ -20,7 +20,10 @@ if your master is correct the screen changes and you will enter into chat App el
 
 Now you can Create a room by going into add room and share its key to your friends.They will copy this key and will go to join room menu and paste the key and click join.
 
-![Alt text](demo.gif)
+<div align="center">
+<img src="demo.gif" >
+<p>How to get started</p>
+</div>
 
 ## Features
 

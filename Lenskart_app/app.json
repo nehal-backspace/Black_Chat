@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "Lenskart",
+    "slug": "Lenskart",
+    "platforms": ["ios", "android", "web"],
+    "version": "29.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+	  "bundleIdentifier": "com.nehalnj.KutiyApp2",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "versionCode": 1,
+      "package": "com.nehal_nj.KutiyApp",
+      "googleServicesFile": "./google-services.json",
+      "config": {
+        "googleSignIn": {
+          "apiKey": "AIzaSyAbEFgFjQM7esHo3n7nSAkCblPMxlywuV4"
+        }
+      },
+      "useNextNotificationsApi": true
+    }
+  }
+}

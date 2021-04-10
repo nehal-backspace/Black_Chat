@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: blackchat.ml
+Token: bd503b532ea000570b10c0d37cfaa742d055a283b4fabfa511d28b91f274741a

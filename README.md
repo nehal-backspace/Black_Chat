@@ -49,4 +49,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 email - nehalshrivashtava@gmail.com
 
-linkedin - https://www.linkedin.com/in/nehal-shrivashtava-188aa9171/
+linkedin - https://www.linkedin.com/in/nehal13/

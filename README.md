@@ -12,7 +12,7 @@ This way I got my Problem Statement along with Constraints.
 
 ## Download and Installation
 
-Go to (https://blackchat.ml) Enter your name and create your Master Key then click Register.Next Download any one of the available App.
+Go to (https://blackchat.ga) Enter your name and create your Master Key then click Register.Next Download any one of the available App.
 Once it is installed , open the App and you will find an input field asking for your mobile number.
 
 Enter Your Master Key there and click the button.
